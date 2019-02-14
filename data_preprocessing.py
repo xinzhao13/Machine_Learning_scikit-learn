@@ -46,9 +46,8 @@ y = labelencoder_y.fit_transform(y)
 
 
 # Splitting dataset into Training and Test set
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split # Using .model_selection because .cross_validation is deprecated.
 X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size = 0.20)
-# Using .model_selection because .cross_validation is deprecated.
 
 
 # Feature scaling implementation
