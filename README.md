@@ -1,2 +1,2 @@
-# Machine_Learning_Python
-Implementation of as many machine learning algorithms as possible in Python
+# Machine Learning Python
+Implementation of many machine learning algorithms in Python, along with proper documentation and data sets used.
