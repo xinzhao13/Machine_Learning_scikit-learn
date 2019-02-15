@@ -21,7 +21,7 @@ regressor = SVR(kernel = 'rbf')
 regressor.fit(X, y)
 
 # Predicting a new result
-y_pred = regressor.predict(np.array([6.5]).reshape(1,-1))
+y_pred = regressor.predict(sc_X.transform(np.array([6.5]).reshape(1,-1)))
 y_pred = sc_y.inverse_transform(y_pred)
 
 # Visualising the SVR results
