@@ -26,9 +26,53 @@ X = X[:, 1:]
 # Feature scaling (not needed as the library does this anyway)
 from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
-X[:, 3:6] = sc_X.fit_transform(X[:, 3:6])
+X[:, 2:5] = sc_X.fit_transform(X[:, 2:5])
 
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+
+
+# Initialize and fit multiple linear regression
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+
+# Test set results prediction
+y_predictions = regressor.predict(X_test)
+
+
+# Add bias as it is not accounted for by statsmodel library
+X = np.append(arr = np.ones((50,1)).astype(int), values = X, axis = 1)
+
+
+# Optimize model with backward elimination
+#   (manual process; p-value = 0.050)
+import statsmodels.formula.api as sm
+
+X_optimal = X[:, [0, 1, 2, 3, 4, 5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_optimal).fit()
+regressor_OLS.summary()
+# remove x2 as P>|t| = 0.990
+
+X_optimal = X[:, [0, 1, 3, 4, 5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_optimal).fit()
+regressor_OLS.summary()
+# remove x1 as P>|t| = 0.940
+
+X_optimal = X[:, [0, 3, 4, 5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_optimal).fit()
+regressor_OLS.summary()
+# remove x2 as P>|t| = 0.602
+
+X_optimal = X[:, [0, 3, 5]]
+regressor_OLS = sm.OLS(endog = y, exog = X_optimal).fit()
+regressor_OLS.summary()
+# remove x2 as P>|t| = 0.060.
+
+X_optimal = X[:, [0, 3]]
+regressor_OLS = sm.OLS(endog = y, exog = X_optimal).fit()
+regressor_OLS.summary()
+# model optimized
