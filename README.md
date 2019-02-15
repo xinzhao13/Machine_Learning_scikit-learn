@@ -1,5 +1,5 @@
 # Machine Learning Python
-Implementation of many machine learning algorithms in Python, along with proper documentation and data sets used for examples.
+Implementation of many machine learning algorithms in Python, along with proper documentation and data sets used for examples. Mostly using scikit-learn.
 
 # Implementations
   - Simple Linear Regression
