@@ -5,3 +5,4 @@ Implementation of many machine learning algorithms in Python, along with proper 
   - Simple Linear Regression
   - Multiple Linear Regression
   - Polynomial Linear Regression
+  - Support Vector Regression
