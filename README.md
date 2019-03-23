@@ -17,10 +17,10 @@ Implementation of many machine learning algorithms in Python, along with proper 
   - Random Forest Classification
   - K-Means Clustering
   - Hierarchical Clustering
-  - Apriori Association
-  - Eclat Association
   - Upper Confidence Bound Reinforcement Learning
   - Thompson Sampling
   - Principal Component Analysis
   - Kernel Principal Component Analysis
   - Linear Discriminant Analysis
+  - ~~Apriori Association~~ (no scikit support)
+  - ~~Eclat Association~~ (no scikit support)
