@@ -4,7 +4,7 @@ Implementation of many machine learning algorithms in Python using scikit-learn,
 # Implementations
   - Simple Linear Regression - [Demo](https://github.com/NicoEssi/Machine_Learning_scikit-learn/blob/master/Simple_Linear_Regression_Demo.ipynb)
   - Multiple Linear Regression - [Demo](https://github.com/NicoEssi/Machine_Learning_scikit-learn/blob/master/Multiple_Linear_Regression_Demo.ipynb)
-  - Polynomial Linear Regression
+  - Polynomial Linear Regression - [Demo](https://github.com/NicoEssi/Machine_Learning_scikit-learn/blob/master/Polynomial_Regression_Demo.ipynb)
   - Support Vector Regression
   - Decision Tree Regression
   - Random Forest Regression
