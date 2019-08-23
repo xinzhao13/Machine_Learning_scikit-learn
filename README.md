@@ -1,8 +1,8 @@
 # Machine Learning Python
-Implementation of many machine learning algorithms in Python, along with proper documentation and data sets used for examples. Mostly using scikit-learn.
+Implementation of many machine learning algorithms in Python using scikit-learn, along with proper documentation, data sets used for examples, and demos.
 
 # Implementations
-  - Simple Linear Regression
+  - Simple Linear Regression  [Demo](https://github.com/NicoEssi/Machine_Learning_scikit-learn/blob/master/Simple_Linear_Regression_Demo.ipynb)
   - Multiple Linear Regression
   - Polynomial Linear Regression
   - Support Vector Regression
@@ -20,7 +20,3 @@ Implementation of many machine learning algorithms in Python, along with proper 
   - Principal Component Analysis
   - Kernel Principal Component Analysis
   - Linear Discriminant Analysis
-  - ~~Apriori Association~~ (no scikit support)
-  - ~~Eclat Association~~ (no scikit support)
-  - ~~Thompson Sampling~~ (no scikit support)
-  - ~~Upper Confidence Bound Reinforcement Learning~~ (no scikit support)
