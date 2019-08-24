@@ -30,4 +30,4 @@ Implementation of many machine learning algorithms in Python using scikit-learn,
   - Linear Discriminant Analysis
   
 **Model Selection**:
-[model selection](https://scikit-learn.org/stable/_static/ml_map.png)
+[Decision Tree](https://scikit-learn.org/stable/_static/ml_map.png)
