@@ -13,7 +13,7 @@ Implementation of many machine learning algorithms in Python using scikit-learn,
   
 **Classification Models**:
   - Logistic Regression - [Demo](https://github.com/NicoEssi/Machine_Learning_scikit-learn/blob/master/Logistic_Regression_Demo.ipynb)
-  - K-Nearest Neighbors
+  - K-Nearest Neighbors - [Demo](https://github.com/NicoEssi/Machine_Learning_scikit-learn/blob/master/KNN_Classification_Demo.ipynb)
   - Support Vector Machine
   - Kernel Support Vector Machine
   - Naive Bayes
