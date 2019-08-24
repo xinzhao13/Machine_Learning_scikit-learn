@@ -28,3 +28,6 @@ Implementation of many machine learning algorithms in Python using scikit-learn,
   - Principal Component Analysis
   - Kernel Principal Component Analysis
   - Linear Discriminant Analysis
+  
+**Model Selection**:
+[model selection](https://scikit-learn.org/stable/_static/ml_map.png)
